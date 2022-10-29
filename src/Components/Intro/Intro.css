@@ -1,0 +1,374 @@
+.Intro {
+  display: flex;
+  height: 77vh;
+  margin-top: 9rem ;
+}
+
+/* left side styling */
+.i-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.i-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.text1{
+  width: 70%;
+}
+
+.bt{
+  margin-top: 4rem;
+}
+.i-name > :nth-child(2) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--gray);
+  margin-top: 10px;
+}
+.i-button {
+  width: 6rem;
+  height: 2rem;
+}
+.i-icons {
+  margin-top: 2rem;
+  display: flex;
+  width: 170px;
+  left: -2rem;
+  position: relative;
+  height: 183px;
+  gap: 0rem;
+}
+.i-icons > * {
+  transform: scale(0.4);
+}
+.i-icons > *:hover {
+  cursor: pointer;
+}
+/* right side styling */
+.i-right {
+  flex: 1;
+  position: relative;
+}
+.i-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.i-right > :nth-child(1) {
+  transform: scale(1.1);
+  left: 5%;
+  top: -30%;
+}
+.i-right > :nth-child(2) {
+  top: -1.6rem;
+  transform: scale(0.67);
+  left: -5rem;
+}
+.i-right > :nth-child(3) {
+  transform: scale(1.6);
+  left: 1%;
+  bottom: -70%;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.62);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+}
+
+
+
+/* blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+
+@media screen and (max-width: 820px) {
+  .Intro{
+    margin-top: 180px;
+  }
+}
+
+
+
+@media screen and (max-width: 820px) {
+  .Intro{
+    margin-top: 20px;
+  }
+  .i-name > :nth-child(3) {
+    width: 100%;
+  }
+  .i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  .i-right {
+    transform: scale(0.8);
+    left: -1rem;
+  }
+
+  .i-right > :nth-child(1) {
+    transform: scale(1.4) !important;
+    left: 14% !important;
+    top: -10%;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  .Intro {
+    flex-direction: column;
+    gap: 7rem;
+    height: 6rem;
+    margin-top: 80px !important;
+  }
+
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .i-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1){
+    /* display: none; */
+    top: -7rem !important;
+    
+  }
+  .i-icons {
+    margin-top: 2rem;
+   
+    display: flex;
+    width: 170px;
+    left: -2rem;
+    position: relative;
+    height: 183px;
+    gap: 0rem;
+  }
+  .i-right > :nth-child(1) {
+    transform: scale(1.1) !important;
+    left: 3% !important;
+    top: -230px !important;
+  }
+}
+
+@media screen and (max-width: 661px) {
+.i-right > :nth-child(1) {
+  transform: scale(1.1) !important;
+  left: 3% !important;
+  top: -230px !important;
+}
+}
+
+@media screen and (max-width: 621px) {
+  .i-right > :nth-child(1) {
+    transform: scale(1.3) !important;
+    left: 3% !important;
+    top: -230px !important;
+  }
+  }
+  
+  @media screen and (max-width: 603px) {
+    .i-right > :nth-child(1) {
+      transform: scale(1.3) !important;
+      left: 3% !important;
+      top: -250px !important;
+    }
+    }
+
+@media screen and (max-width: 570px) {
+  .i-icons {
+    margin-top: 1rem;
+    display: flex;
+    width: 140px;
+    left: -2rem;
+    position: relative;
+    height: 153px;
+    gap: 0rem;
+  }
+  .i-right > :nth-child(1) {
+    transform: scale(1.3) !important;
+    left: 3% !important;
+    top: -230px !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  .i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .i-name > :nth-child(3) {
+    width: 100%;
+  }
+  .i-name > :nth-child(2) {
+    
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .i-name > :nth-child(3) {
+    width: 100%;
+  }
+  .i-right > :nth-child(1) {
+    transform: scale(1.3) !important;
+    left: 3% !important;
+    top: -250px !important;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .i-icons {
+    margin-top: 1rem;
+    display: flex;
+    width: 120px;
+    left: -2rem;
+    position: relative;
+    height: 123px;
+    gap: 0rem;
+  }
+  .i-right > :nth-child(1) {
+    transform: scale(1.3) !important;
+    left: 12% !important;
+    top: -180px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .i-icons {
+    margin-top: 1rem;
+    display: flex;
+    width: 100px;
+    left: -2rem;
+    position: relative;
+    height: 103px;
+    gap: 0rem;
+  }
+  .i-right > :nth-child(1) {
+    transform: scale(1.5) !important;
+    left: 20% !important;
+    top: -150px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .i-icons {
+    margin-top: 1rem;
+    display: flex;
+    width: 100px;
+    left: -3rem;
+    position: relative;
+    height: 103px;
+    gap: 0rem;
+  }
+  .i-right > :nth-child(1) {
+    transform: scale(1.5) !important;
+    left: 37% !important;
+    top: -150px !important;
+  }
+}
+
+@media screen and (max-width:3200px) {
+  .Intro{
+    margin-top: 180px;   
+  }
+}
+
+@media screen and (max-width:1090px) {
+  .i-right > :nth-child(1) {
+    transform: scale(1.2);
+    left: 5%;
+    top: -17%;
+  }
+}
+
+@media screen and (max-width:916px) {
+  .i-right > :nth-child(1) {
+    transform: scale(1.3);
+    left: 5%;
+    top: -15%;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .i-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .i-name > :nth-child(1) {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .text1{
+    width: 70%;
+  }
+  
+  .bt{
+    margin-top: 4rem;
+  }
+  .i-name > :nth-child(2) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .i-name > :nth-child(3) {
+    font-weight: 100;
+    font-size: 14px;
+    color: var(--gray);
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (max-width:6300px) and (min-width:2000px ){
+  .Intro{
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width:2487px ){
+  .Intro{
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width:2000px ){
+  .Intro{
+    margin-top: 220px;
+  }
+}
+
